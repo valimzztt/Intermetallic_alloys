@@ -1,0 +1,356 @@
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+We are analzying the following configuration
+6 Mn5Ni11_As16_0
+We are analzying the following configuration
+7 Mn1Ni2_As3_0
+The final energies is  -25917.269349297552
+We have updated the database for the following row
+7
+We are analzying the following configuration
+8 Mn1Ni11_As12_0
+The final energies is  -56944.959121575
+We have updated the database for the following row
+8
+We are analzying the following configuration
+9 Mn1Ni7_As8_0
+COMMAND WAS CALLED SUCCESSFULLY IN SUBPROCESS
+The number of kpoints in the irreducibile Brillouin zone are:
+[[0. 0. 0.]]
+We have updated the database for the following row
+9
+We are analzying the following configuration
+10 Mn1Ni1_As2_0
+COMMAND WAS CALLED SUCCESSFULLY IN SUBPROCESS
+The number of kpoints in the irreducibile Brillouin zone are:
+[[0. 0. 0.]]
+We have updated the database for the following row
+10
+We are analzying the following configuration
+11 Mn1Ni1_As2_1
+We are analzying the following configuration
+12 Mn1Ni15_As16_0
+COMMAND WAS CALLED SUCCESSFULLY IN SUBPROCESS
+The number of kpoints in the irreducibile Brillouin zone are:
+[[0. 0. 0.]]
+We have updated the database for the following row
+12
+We are analzying the following configuration
+13 Mn1Ni1_As2_2
+COMMAND WAS CALLED SUCCESSFULLY IN SUBPROCESS
+The number of kpoints in the irreducibile Brillouin zone are:
+[[0. 0. 0.]]
+We have updated the database for the following row
+13
+We are analzying the following configuration
+14 Mn7Ni9_As16_0
+We are analzying the following configuration
+15 Mn3Ni1_As4_1
+The final energies is  -28877.550617228157
+We have updated the database for the following row
+15
+We are analzying the following configuration
+16 Mn2Ni1_As3_0
+The final energies is  -22514.920681005973
+We have updated the database for the following row
+16
+We are analzying the following configuration
+17 Mn3Ni1_As4_2
+COMMAND WAS CALLED SUCCESSFULLY IN SUBPROCESS
+The number of kpoints in the irreducibile Brillouin zone are:
+[[ 0.00000000e+00  0.00000000e+00  0.00000000e+00]
+ [-3.16134207e-07  6.06209021e-07 -5.00000121e-01]]
+We have updated the database for the following row
+17
+We are analzying the following configuration
+18 Mn3Ni5_As8_0
+We are analzying the following configuration
+19 Mn9Ni1_As10_0
+We are analzying the following configuration
+20 Mn2Ni1_As3_1
+COMMAND WAS CALLED SUCCESSFULLY IN SUBPROCESS
+The number of kpoints in the irreducibile Brillouin zone are:
+[[ 0.00000000e+00  0.00000000e+00  0.00000000e+00]
+ [-2.94809035e-07 -8.90458206e-07 -5.00000216e-01]]
+We have updated the database for the following row
+20
+We are analzying the following configuration
+21 Mn15Ni1_As16_0

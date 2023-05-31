@@ -1,0 +1,79 @@
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+We are analzying the following configuration
+2 Mn1_As1_0
+COMMAND WAS CALLED SUCCESSFULLY IN SUBPROCESS
+The number of kpoints in the irreducibile Brillouin zone are:
+[[0. 0. 0.]]
+We have updated the database for the following row
+2
+We are analzying the following configuration
+3 Ni1_As1_0
+COMMAND WAS CALLED SUCCESSFULLY IN SUBPROCESS
+The number of kpoints in the irreducibile Brillouin zone are:
+[[0. 0. 0.]]
+We have updated the database for the following row
+3
+We are analzying the following configuration
+4 Mn3Ni1_As4_0
+COMMAND WAS CALLED SUCCESSFULLY IN SUBPROCESS
+The number of kpoints in the irreducibile Brillouin zone are:
+[[0. 0. 0.]]
+We have updated the database for the following row
+4
+We are analzying the following configuration
+5 Mn1Ni3_As4_0
+COMMAND WAS CALLED SUCCESSFULLY IN SUBPROCESS
+The number of kpoints in the irreducibile Brillouin zone are:
+[[0. 0. 0.]]
+We have updated the database for the following row
+5
+We are analzying the following configuration
+6 Mn5Ni11_As16_0
+Traceback (most recent call last):
+  File "/home/valmzztt/Intermetallic_alloys/MnNiAs.py", line 87, in <module>
+    atoms.get_potential_energy()
+  File "/home/valmzztt/clease_env/lib/python3.9/site-packages/ase/atoms.py", line 731, in get_potential_energy
+    energy = self._calc.get_potential_energy(self)
+  File "/home/valmzztt/clease_env/lib/python3.9/site-packages/ase/calculators/calculator.py", line 709, in get_potential_energy
+    energy = self.get_property('energy', atoms)
+  File "/home/valmzztt/clease_env/lib/python3.9/site-packages/ase/calculators/calculator.py", line 737, in get_property
+    self.calculate(atoms, [name], system_changes)
+  File "/home/valmzztt/clease_env/lib/python3.9/site-packages/ase/calculators/calculator.py", line 939, in calculate
+    raise CalculationFailed(msg)
+ase.calculators.calculator.CalculationFailed: Calculator "espresso" failed with command "mpirun /home/sci/opt/qe-7.2_impi/bin/pw.x -np 4 < espresso.pwi > espresso.pwo" failed in /home/valmzztt/Intermetallic_alloys/config_6 with error code 2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/valmzztt/Intermetallic_alloys/MnNiAs.py", line 90, in <module>
+    energy = get_energies("espresso.pwo")
+  File "/home/valmzztt/Intermetallic_alloys/MnNiAs.py", line 52, in get_energies
+    a = energies[-1][0]
+IndexError: list index out of range

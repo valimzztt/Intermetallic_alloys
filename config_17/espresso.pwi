@@ -1,0 +1,44 @@
+&CONTROL
+   calculation      = 'relax'
+   restart_mode     = 'from_scratch'
+   prefix           = 'tutorial'
+   pseudo_dir       = '/home/valmzztt/Intermetallic_alloys/pseudos'
+/
+&SYSTEM
+   ecutwfc          = 40.424222147
+   occupations      = 'smearing'
+   degauss          = 0.0146997171
+   ntyp             = 3
+   nat              = 8
+   ibrav            = 0
+/
+&ELECTRONS
+/
+&IONS
+/
+&CELL
+/
+
+ATOMIC_SPECIES
+Mn 54.938044 Mn.pbesol-spn-rrkjus_psl.0.3.1.UPF
+Ni 58.6934 Ni.pbesol-spn-rrkjus_psl.1.0.0.UPF
+As 74.921595 As.pbesol-n-rrkjus_psl.1.0.0.UPF
+
+K_POINTS automatic
+1 1 2  0 0 0
+
+CELL_PARAMETERS angstrom
+3.64580405000000 0.00000000000000 5.04506600000000
+-3.64580405000000 6.31471784904038 10.09013200000000
+0.00000000000000 0.00000000000000 5.04506600000000
+
+ATOMIC_POSITIONS angstrom
+Mn -1.8229020250 3.1573589245 5.0450660000 
+Ni -1.8229020250 3.1573589245 7.5675990000 
+As -1.8229020432 5.2622648847 11.3513985000 
+Mn 0.0000000000 0.0000000000 0.0000000000 
+Mn -0.0000000000 -0.0000000000 2.5225330000 
+As -0.0000000182 2.1049059602 6.3063325000 
+As 0.0000000182 4.2098118888 13.8739315000 
+As 1.8229020432 1.0524529643 8.8288655000 
+
