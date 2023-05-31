@@ -151,6 +151,11 @@ for row in db.select(converged=True):
       initial_struct_id = row.id
       update_converged_configs(initial_struct_id, final_struct_id)  
 
+
+from mdutils.mdutils import MdUtils
+from mdutils import Html
+mdAcme = MdUtils(file_name='info')
+mdAcme.create_md_file()
 # 2) CLUSTER EXPANSION: 
 from clease import Evaluate
 eva = Evaluate(settings=settings, scoring_scheme='loocv')
@@ -173,15 +178,24 @@ import json
 import matplotlib.pyplot as plt
 import json
 fig = pp.plot_fit(eva)
-plt.show()
+fig.savefig('alpha-fit.png')
+mdAcme.new_paragraph('CE fitting results:', bold_italics_code='bi', align='center')
+mdAcme.new_header(level=1, title='Overview')
+mdAcme.write("The chosen value of alpha is: ")
+mdAcme.write(str(alpha))
+mdAcme.new_paragraph(Html.image(path='alpha-fit.png', size='250', align='center'))
+
 
 # plot ECI values
 fig = pp.plot_eci(eva)
-plt.show()
+fig.savefig('ECI-values.png')
+mdAcme.new_paragraph(Html.image(path='ECI-values.png', size='250', align='center'))
+mdAcme.create_md_file()
+
 # save a dictionary containing cluster names and their ECIs
-cluster_expansion = curr_directory + '/TiO2_hubbard_alpha100'
+cluster_expansion = curr_directory + '/MnNiAs'
 eva.save_eci(fname=cluster_expansion)
-eci_file=open('TiO2_hubbard_alpha100.json', 'r')
+eci_file=open('MnNiAs.json', 'r')
 eci = json.load(eci_file)
 print(eci)
 from clease.calculator import attach_calculator
@@ -189,14 +203,14 @@ atoms = settings.atoms.copy()*(7, 7, 7)
 atoms = attach_calculator(settings, atoms=atoms, eci=eci)
 
 for i in range(0,len(atoms),1):
-    if atoms[i].symbol=='Ti' and i%2 == 0:
-        atoms[i].symbol='Zr'
+    if atoms[i].symbol=='Mn' and i%2 == 0:
+        atoms[i].symbol='Ni'
 
 
 from clease.montecarlo import Montecarlo
 from clease.montecarlo.observers import EnergyEvolution
 # Monte Carlo results will be createed
-directory = 'MC_hubbard_5000K_alpha100_results'
+directory = 'MC_5000K_results'
 parent_dir = cwd
 path = os.path.join(parent_dir, directory)
 os.mkdir(path)  
