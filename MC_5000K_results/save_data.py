@@ -59,7 +59,10 @@ plt.subplot(2, 1, 2) # index 2
 plt.plot(temperatures, heat_capacities, "bo",  marker='.')
 plt.xlabel('Temperature (K)')
 plt.ylabel('Heat capacity (J*K)')
-fig.savefig('enery-hc-vs-temp.png')    
+image_name = "energy-hc-vs-temp.png"
+image_path = os.path.join(directory,image_name)
+
+fig.savefig(image_path)    
 
 mc_result =  os.path.join(directory,"_mc-results")
 mdAcme = MdUtils(file_name=mc_result)
@@ -67,5 +70,5 @@ mdAcme.create_md_file()
 
 mdAcme.new_paragraph('Results of MONTE CARLO runs:', bold_italics_code='bi', align='center')
 mdAcme.new_header(level=1, title='Overview')
-mdAcme.new_paragraph(Html.image(path='enery-hc-vs-temp.png', size='250', align='center'))
+mdAcme.new_paragraph(Html.image(path=image_name, size='250', align='center'))
 mdAcme.create_md_file()

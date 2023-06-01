@@ -8,5 +8,5 @@
 
 
 <p align="center">
-    <img src="enery-hc-vs-temp.png" width="250"/>
+    <img src="energy-hc-vs-temp.png" width="250"/>
 </p>

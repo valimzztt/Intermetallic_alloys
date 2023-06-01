@@ -1,8 +1,4 @@
 
-
-
-
-
 ***<center>CE fitting results:</center>***
 # Overview
 The chosen value of alpha is: 15.264179671752302
