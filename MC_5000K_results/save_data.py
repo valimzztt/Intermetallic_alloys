@@ -1,3 +1,8 @@
+from mdutils.mdutils import MdUtils
+from mdutils import Html
+import matplotlib.pyplot as plt
+import json
+import clease.plot_post_process as pp
 # import required module
 import os
 import json
@@ -54,11 +59,13 @@ plt.subplot(2, 1, 2) # index 2
 plt.plot(temperatures, heat_capacities, "bo",  marker='.')
 plt.xlabel('Temperature (K)')
 plt.ylabel('Heat capacity (J*K)')
+fig.savefig('enery-hc-vs-temp.png')    
 
+mc_result =  os.path.join(directory,"_mc-results")
+mdAcme = MdUtils(file_name=mc_result)
+mdAcme.create_md_file()
 
-
-# Set l
-
-# Show the plot
-plt.show()
-              
+mdAcme.new_paragraph('Results of MONTE CARLO runs:', bold_italics_code='bi', align='center')
+mdAcme.new_header(level=1, title='Overview')
+mdAcme.new_paragraph(Html.image(path='enery-hc-vs-temp.png', size='250', align='center'))
+mdAcme.create_md_file()

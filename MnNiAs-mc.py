@@ -129,7 +129,7 @@ for row in db.select(converged=False):
         # will sometimes fail so we will get the energies computed by QE manually by reading the output file
         atoms.get_potential_energy()
     except:
-        # For some reason, it will fail so we will just get the energy value manually from the created espresso,pwo file
+        # For some reason, this CLEASE method will fail so we will just get the energy value manually from the created espresso,pwo file
         try:
             energy = get_energies("espresso.pwo")
             update_energy(energy, row.id)
